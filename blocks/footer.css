@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer__copyright {
+  font-family: "poppins" Arial, Helvetica, sans-serif;
+  opacity: 70%;
+}

@@ -1,0 +1,12 @@
+.header {
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffffcc;
+}
+
+.header__logo {
+  width: 94px;
+  height: 26px;
+  margin: 10px 0 10px 0;
+}

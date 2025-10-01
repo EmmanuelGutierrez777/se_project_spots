@@ -1,0 +1,118 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px #000 solid;
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 34px;
+}
+
+.profile__customization {
+  display: flex;
+  column-gap: 20px;
+}
+
+.profile__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile__name-and-bio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  max-width: 420px;
+}
+
+.profile__name {
+  font-family: "poppins-m", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__bio {
+  font-family: "poppins-m", Arial, Helvetica, sans-serif;
+  opacity: 70%;
+  line-height: 1;
+  font-size: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__edit-button-layout {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  opacity: 70%;
+  transition: 0.3s linear;
+  height: 16px;
+  padding: 0;
+}
+
+.profile__edit-button-layout:hover {
+  opacity: 100%;
+}
+
+.profile__new-post-button {
+  background: #212121;
+  color: #fff;
+  border-radius: 8px;
+  height: 52px;
+  padding: 0;
+  border: none;
+  width: 149px;
+  transition: 0.3s linear;
+  margin-top: auto;
+}
+
+.profile__plus-button-image {
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+}
+
+.profile__new-post-button:hover {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 844px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__customization {
+    flex-direction: column;
+    align-items: center;
+    max-width: 288px;
+  }
+
+  .profile__avatar {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+  }
+
+  .profile__edit-button-layout {
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .profile__new-post-button {
+    width: 100%;
+  }
+}

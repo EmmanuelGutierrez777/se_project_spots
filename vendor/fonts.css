@@ -2,5 +2,16 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+  line-height: 1;
+  src: url(../vendor/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "poppins-m";
+  src: url(../vendor/fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: Medium;
+  leading-trim: NONE;
+  line-height: 1;
+  letter-spacing: 0%;
 }
