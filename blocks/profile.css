@@ -1,9 +1,8 @@
 .profile {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding: 0 20px 20px;
   border-bottom: 1px #000 solid;
-  max-width: 1280px;
   margin: auto;
   margin-top: 34px;
 }
@@ -27,7 +26,8 @@
 }
 
 .profile__name {
-  font-family: "poppins-m", Arial, Helvetica, sans-serif;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 32px;
   line-height: 1;
   display: -webkit-box;
@@ -38,10 +38,11 @@
 }
 
 .profile__bio {
-  font-family: "poppins-m", Arial, Helvetica, sans-serif;
+  font-family: poppins, Arial, Helvetica, sans-serif;
   opacity: 70%;
   line-height: 1;
   font-size: 16px;
+  font-weight: 500;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -57,6 +58,12 @@
   transition: 0.3s linear;
   height: 16px;
   padding: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #212121;
+  cursor: pointer;
 }
 
 .profile__edit-button-layout:hover {
@@ -73,6 +80,8 @@
   width: 149px;
   transition: 0.3s linear;
   margin-top: auto;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .profile__plus-button-image {
@@ -100,6 +109,7 @@
   .profile__avatar {
     max-width: 80px;
     max-height: 80px;
+    margin: 0 0 12px 0;
   }
 
   .profile__name {

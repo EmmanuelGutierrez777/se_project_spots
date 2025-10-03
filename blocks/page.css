@@ -1,19 +1,12 @@
 .page {
   background-color: #fcf5e5;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  max-width: 1440px;
-  margin: auto;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
-.content {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (max-width: 844px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.page__section {
+  max-width: 1280px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }

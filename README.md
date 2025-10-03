@@ -12,7 +12,8 @@
   ![web-responsivness](./images/sprint-3-responsive.png)
   **Intro**
 
-This project was testing all the skills weve learned in order to make a social media web page from scratch.
+This project was testing all the skills weve learned in order to make a social media web page from scratch. -[link to project](https://emmanuelgutierrez777.github.io/se_project_spots/)
+[Recording](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link)
 
 **Figma**
 

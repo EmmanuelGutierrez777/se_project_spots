@@ -2,75 +2,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(288px, 413px));
   grid-template-rows: repeat(auto-fill, minmax(288px, 1fr));
-  max-width: 1280px;
   margin-top: 20px;
   border-bottom: 1px #000 solid;
-  justify-content: center;
   row-gap: 40px;
   column-gap: 20px;
-}
-
-.card {
-  max-width: 413px;
-}
-
-.card__image {
-  width: 100%;
-  max-height: 413px;
-  border-radius: 2%;
-  margin-bottom: 12px;
-}
-
-.card__ui {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.card__description {
-  font-family: "poppins-m" Arial, Helvetica, sans-serif;
-  line-height: 1;
-  font-size: 24px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 353px;
-  margin: 0;
-}
-
-.card__button {
-  border: none;
-  opacity: 40%;
-  border: none;
-  transition: 0.3s linear;
-  padding: 0;
-}
-
-.card__button:hover {
-  opacity: 100%;
+  justify-content: center;
 }
 
 @media screen and (max-width: 844px) {
   .cards {
     max-width: 288px;
     row-gap: 20px;
-  }
-  .card__image {
-    width: 100%;
-    max-height: 288px;
-  }
-
-  .card__ui {
-    margin-bottom: 20px;
-  }
-
-  .card__description {
-    font-size: 18px;
-    line-height: 1;
-  }
-
-  .card__like-button {
-    height: 18px;
   }
 }
