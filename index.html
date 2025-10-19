@@ -125,6 +125,85 @@
       <footer class="footer page__section">
         <p class="footer__copyright">2025 © Emmanuel Gutierrez</p>
       </footer>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <div class="modal__row">
+            <h2 class="modal__title">Edit profile</h2>
+            <img
+              src="./images/x-icon.svg"
+              alt="exit button"
+              class="form__exit-icon"
+            />
+          </div>
+          <form class="modal__form">
+            <fieldset class="form__profile">
+              <div class="form__container">
+                <div class="form__input-wrap">
+                  <label for="full-name" class="form__label">Name</label>
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Type your name"
+                    id="full-name"
+                  />
+                </div>
+                <div class="form__input-wrap">
+                  <label for="form-description" class="form__label"
+                    >Description</label
+                  >
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="form-description"
+                    placeholder="Describe yourself"
+                  />
+                </div>
+                <button class="form__button" type="button">Save</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+          <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <div class="modal__row">
+            <h2 class="modal__title">New post</h2>
+            <img
+              src="./images/x-icon.svg"
+              alt="exit button"
+              class="form__exit-icon"
+            />
+          </div>
+          <form class="modal__form">
+            <fieldset class="form__profile">
+              <div class="form__container">
+                <div class="form__input-wrap">
+                  <label for="full-name" class="form__label">Image link</label>
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Paste a link to the picture"
+                    id="full-name"
+                  />
+                </div>
+                <div class="form__input-wrap">
+                  <label for="form-description" class="form__label"
+                    >Caption</label
+                  >
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="form-description"
+                    placeholder="Type your caption"
+                  />
+                </div>
+                <button class="form__button" type="button">Save</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
