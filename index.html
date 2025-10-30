@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="page">
-      <h1 class="header">
+      <header class="header">
         <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
-      </h1>
+      </header>
       <main class="content">
         <section class="profile page__section">
           <div class="profile__customization">
@@ -28,8 +28,8 @@
             />
             <div class="profile__information">
               <div class="profile__name-and-bio">
-                <div class="profile__name">Bessie Coleman</div>
-                <div class="profile__bio">Civil Aviator</div>
+                <h1 class="profile__name">Bessie Coleman</h1>
+                <p class="profile__bio">Civil Aviator</p>
               </div>
               <button class="profile__edit-button-layout" type="button">
                 <img
@@ -59,7 +59,7 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">Val Thorens</p>
+                <h2 class="card__description">Val Thorens</h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -70,7 +70,7 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">Restaurant terrace</p>
+                <h2 class="card__description">Restaurant terrace</h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -81,7 +81,7 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">An outdoor cafe</p>
+                <h2 class="card__description">An outdoor cafe</h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -92,10 +92,10 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">
+                <h2 class="card__description">
                   A very long bridge, over the forest taking a long long very
                   long time to cross
-                </p>
+                </h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -106,7 +106,7 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">Tunnel with morning light</p>
+                <h2 class="card__description">Tunnel with morning light</h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -117,7 +117,7 @@
                 class="card__image"
               />
               <div class="card__ui">
-                <p class="card__description">Mountain house</p>
+                <h2 class="card__description">Mountain house</h2>
                 <button class="card__button" type="button"></button>
               </div>
             </li>
@@ -136,29 +136,29 @@
         </div>
         <form class="modal__form">
           <fieldset class="modal__form-profile">
-            <div class="modal__form-container">
-              <div class="modal__form-input-wrap">
-                <label for="full-name" class="modal__form-label">Name</label>
-                <input
-                  type="text"
-                  class="modal__form-input"
-                  placeholder="Type your name"
-                  id="full-name"
-                />
-              </div>
-              <div class="modal__form-input-wrap">
-                <label for="form-description" class="modal__form-label"
-                  >Description</label
-                >
-                <input
-                  type="text"
-                  class="modal__form-input"
-                  id="form-description"
-                  placeholder="Describe yourself"
-                />
-              </div>
-              <button class="modal__form-button" type="submit">Save</button>
+            <div class="modal__form-input-wrap">
+              <label for="full-name" class="modal__form-label">Name</label>
+              <input
+                type="text"
+                class="modal__form-input"
+                placeholder="Type your name"
+                id="full-name"
+                required
+              />
             </div>
+            <div class="modal__form-input-wrap">
+              <label for="form-description" class="modal__form-label"
+                >Description</label
+              >
+              <input
+                type="text"
+                class="modal__form-input"
+                id="form-description"
+                placeholder="Describe yourself"
+                required
+              />
+            </div>
+            <button class="modal__form-button" type="submit">Save</button>
           </fieldset>
         </form>
       </div>
@@ -181,6 +181,7 @@
                   class="modal__form-input"
                   placeholder="Paste a link to the picture"
                   id="image-link"
+                  required
                 />
               </div>
               <div class="modal__form-input-wrap">
@@ -190,6 +191,7 @@
                   class="modal__form-input"
                   id="caption"
                   placeholder="Type your caption"
+                  required
                 />
               </div>
               <button class="modal__form-button" type="submit">Save</button>
