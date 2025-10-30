@@ -46,10 +46,16 @@
 }
 
 .modal__exit-icon {
+  background-image: url(../images/x-icon.svg);
+  background-size: cover;
   width: 40px;
   height: 40px;
   opacity: 40%;
   transition: 0.3s linear;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
 .modal__exit-icon:hover {
@@ -69,6 +75,6 @@
 
   .modal__title {
     font-size: 20px;
-    height: 20px;
+    padding: 10px 0;
   }
 }

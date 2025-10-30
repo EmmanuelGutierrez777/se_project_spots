@@ -19,6 +19,7 @@
   font-family: poppins, Arial, Helvetica, sans-serif;
   line-height: 1;
   font-size: 20px;
+  letter-spacing: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -32,7 +33,7 @@
   transition: 0.3s linear;
   padding: 0;
   background-color: transparent;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .card__button::before {

@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <h1 class="header">
         <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
-      </header>
+      </h1>
       <main class="content">
         <section class="profile page__section">
           <div class="profile__customization">
@@ -51,75 +51,77 @@
           </button>
         </section>
         <section class="cards page__section">
-          <div class="card">
-            <img
-              src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">Val Thorens</p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/2-photo-by-ceiline-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">Restaurant terrace</p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">An outdoor cafe</p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">
-                A very long bridge, over the forest taking a long long very long
-                time to cross
-              </p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">Tunnel with morning light</p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__ui">
-              <p class="card__description">Mountain house</p>
-              <button class="card__button" type="button"></button>
-            </div>
-          </div>
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">Val Thorens</p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">Restaurant terrace</p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">An outdoor cafe</p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">
+                  A very long bridge, over the forest taking a long long very
+                  long time to cross
+                </p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">Tunnel with morning light</p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__ui">
+                <p class="card__description">Mountain house</p>
+                <button class="card__button" type="button"></button>
+              </div>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer page__section">
@@ -130,11 +132,7 @@
       <div class="modal__container">
         <div class="modal__row">
           <h2 class="modal__title">Edit profile</h2>
-          <img
-            src="./images/x-icon.svg"
-            alt="exit button"
-            class="modal__exit-icon"
-          />
+          <button class="modal__exit-icon" type="button"></button>
         </div>
         <form class="modal__form">
           <fieldset class="modal__form-profile">
@@ -169,34 +167,28 @@
       <div class="modal__container">
         <div class="modal__row">
           <h2 class="modal__title">New post</h2>
-          <img
-            src="./images/x-icon.svg"
-            alt="exit button"
-            class="modal__exit-icon"
-          />
+          <button class="modal__exit-icon" type="button"></button>
         </div>
         <form class="modal__form">
           <fieldset class="modal__form-profile">
             <div class="modal__form-container">
               <div class="modal__form-input-wrap">
-                <label for="full-name" class="modal__form-label"
+                <label for="image-link" class="modal__form-label"
                   >Image link</label
                 >
                 <input
                   type="text"
                   class="modal__form-input"
                   placeholder="Paste a link to the picture"
-                  id="full-name"
+                  id="image-link"
                 />
               </div>
               <div class="modal__form-input-wrap">
-                <label for="form-description" class="modal__form-label"
-                  >Caption</label
-                >
+                <label for="caption" class="modal__form-label">Caption</label>
                 <input
                   type="text"
                   class="modal__form-input"
-                  id="form-description"
+                  id="caption"
                   placeholder="Type your caption"
                 />
               </div>
