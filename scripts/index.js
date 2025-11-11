@@ -1,4 +1,4 @@
-const initalCards = [
+const initialCards = [
   {
     name: "Mountain",
     link: "https://unsplash.com/photos/green-trees-near-gray-mountain-during-daytime-6SHkCsvgfy0",
@@ -83,6 +83,6 @@ function handleAddCardSubmit(evt) {
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
 
-initalCards.forEach(function (card) {
+initialCards.forEach(function (card) {
   console.log(card.name);
 });
