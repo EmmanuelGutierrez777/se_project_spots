@@ -1,3 +1,29 @@
+const initalCards = [
+  {
+    name: "Mountain",
+    link: "https://unsplash.com/photos/green-trees-near-gray-mountain-during-daytime-6SHkCsvgfy0",
+  },
+  {
+    name: "Hamster",
+    link: "https://unsplash.com/photos/selective-focus-photography-of-brown-hamster-adK3Vu70DEQ",
+  },
+  {
+    name: "Pizza",
+    link: "https://unsplash.com/photos/pizza-on-chopping-board-MqT0asuoIcU",
+  },
+  {
+    name: "Cathedral",
+    link: "https://unsplash.com/photos/brown-cathedral-during-daytime-d0xjEv-WJQk",
+  },
+  {
+    name: "Cabin",
+    link: "https://unsplash.com/photos/wooden-house-near-pine-trees-and-pond-coated-with-snow-during-daytime-OgcJIKRnRC8",
+  },
+  {
+    name: "Movies",
+    link: "https://unsplash.com/photos/a-red-and-white-striped-bag-of-popcorn-next-to-a-red-and-white-striped-bag-djvkPJbH3bE",
+  },
+];
 const editProfile = document.querySelector(".profile__edit-button-layout");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editExitButton = editProfileModal.querySelector(".modal__exit-icon");
@@ -56,3 +82,7 @@ function handleAddCardSubmit(evt) {
 }
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
+
+initalCards.forEach(function (card) {
+  console.log(card.name);
+});
