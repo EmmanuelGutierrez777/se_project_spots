@@ -51,84 +51,14 @@
           </button>
         </section>
         <section class="cards page__section">
-          <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">Val Thorens</h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">Restaurant terrace</h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">An outdoor cafe</h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">
-                  A very long bridge, over the forest taking a long long very
-                  long time to cross
-                </h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">Tunnel with morning light</h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt=""
-                class="card__image"
-              />
-              <div class="card__ui">
-                <h2 class="card__description">Mountain house</h2>
-                <button class="card__button" type="button"></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="cards__list"></ul>
         </section>
       </main>
       <footer class="footer page__section">
         <p class="footer__copyright">2025 © Emmanuel Gutierrez</p>
       </footer>
     </div>
-    <div class="modal" id="edit-profile-modal">
+    <modal class="modal" id="edit-profile-modal">
       <div class="modal__container">
         <div class="modal__row">
           <h2 class="modal__title">Edit profile</h2>
@@ -162,8 +92,8 @@
           </fieldset>
         </form>
       </div>
-    </div>
-    <div class="modal" id="new-post-modal">
+    </modal>
+    <modal class="modal" id="new-post-modal">
       <div class="modal__container">
         <div class="modal__row">
           <h2 class="modal__title">New post</h2>
@@ -199,7 +129,40 @@
           </fieldset>
         </form>
       </div>
-    </div>
+    </modal>
+    <modal class="modal modal__preview" id="modal__preview">
+      <div class="modal__preview-wrap">
+        <button class="modal__preview-button">
+          <img src="" alt="" class="modal__preview-img" />
+        </button>
+        <button class="modal__preview-exit-button">
+          <img
+            src="./images/x-icon-white.svg"
+            alt="White X"
+            class="modal__preview-exit-icon"
+          />
+        </button>
+        <p class="modal__preview-caption"></p>
+      </div>
+    </modal>
+    <template id="song-template">
+      <li class="card">
+        <button class="card__delete-button" type="button">
+          <img
+            src="./images/delete_button.svg"
+            alt="Delete button"
+            class="card__delete-img"
+          />
+        </button>
+        <button class="card__img-button">
+          <img class="card__image" src="" alt="" />
+        </button>
+        <div class="card__ui">
+          <h2 class="card__description"></h2>
+          <button class="card__button" type="button"></button>
+        </div>
+      </li>
+    </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
