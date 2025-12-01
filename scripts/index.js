@@ -29,7 +29,7 @@ const initialCards = [
   },
 ];
 
-const songTemplate = document.querySelector("#song-template");
+const cardTemplate = document.querySelector("#card-template");
 const previewModal = document.querySelector("#modal__preview");
 const previewModalImg = previewModal.querySelector(".modal__preview-img");
 const previewModalExit = previewModal.querySelector(
@@ -55,8 +55,12 @@ const newPostCaptionInput = newPostModal.querySelector("#caption");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const cardList = document.querySelector(".cards__list");
 
+previewModalExit.addEventListener("click", function () {
+  closeModal(previewModal);
+});
+
 function getCardElement(data) {
-  const cardElement = songTemplate.content.cloneNode(true);
+  const cardElement = cardTemplate.content.cloneNode(true);
   const cardTitle = cardElement.querySelector(".card__description");
   const cardImg = cardElement.querySelector(".card__image");
   const card = cardElement.querySelector(".card");
@@ -85,19 +89,15 @@ function getCardElement(data) {
     openModal(previewModal);
   });
 
-  previewModalExit.addEventListener("click", function () {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
 
-function openModal(open) {
-  open.classList.add("modal_is-opened");
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
 }
 
-function closeModal(close) {
-  close.classList.remove("modal_is-opened");
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
 }
 
 editProfile.addEventListener("click", function () {
@@ -122,7 +122,7 @@ function editProfileSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileBio.textContent = bioInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 editProfileForm.addEventListener("submit", editProfileSubmitHandler);
@@ -130,8 +130,8 @@ editProfileForm.addEventListener("submit", editProfileSubmitHandler);
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
-  const cardLink = newPostModal.querySelector("#image-link");
-  const cardCaption = newPostModal.querySelector("#caption");
+  const cardLink = newPostLinkInput;
+  const cardCaption = newPostCaptionInput;
   const cardLinkValue = cardLink.value;
   const cardCaptionValue = cardCaption.value;
 

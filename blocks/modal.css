@@ -52,7 +52,7 @@
   background-size: cover;
   width: 40px;
   height: 40px;
-  opacity: 40%;
+  opacity: 0.4;
   transition: 0.3s linear;
   border: none;
   margin: 0;
@@ -132,7 +132,7 @@
   background-color: #212121cc;
 }
 
-.modal__preview {
+.modal_type_preview {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -148,6 +148,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__preview-exit-button {
@@ -155,6 +156,7 @@
   padding: 0;
   background-color: transparent;
   text-align: start;
+  cursor: pointer;
 }
 
 .modal__preview-img {

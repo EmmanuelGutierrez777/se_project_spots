@@ -45,7 +45,7 @@
 .profile__bio {
   margin: 0;
   font-family: poppins, Arial, Helvetica, sans-serif;
-  opacity: 70%;
+  opacity: 0.7;
   line-height: 1;
   font-size: 16px;
   font-weight: 500;
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: flex-start;
   border: none;
-  opacity: 70%;
+  opacity: 0.7;
   transition: 0.3s linear;
   height: 16px;
   padding: 0;
@@ -98,7 +98,7 @@
 }
 
 .profile__new-post-button:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 844px) {
