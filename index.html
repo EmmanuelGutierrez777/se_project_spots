@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -66,15 +66,18 @@
         </div>
         <form class="modal__form">
           <fieldset class="modal__form-profile">
-            <div class="modal__form-input-wrap">
+            <div class="modal__form-input-wrap modal-overlay">
               <label for="full-name" class="modal__form-label">Name</label>
               <input
                 type="text"
                 class="modal__form-input"
                 placeholder="Type your name"
-                id="full-name"
+                id="full__name"
                 required
+                minlength="2"
+                maxlength="40"
               />
+              <span class="full__name-error form__input-error"></span>
             </div>
             <div class="modal__form-input-wrap">
               <label for="form-description" class="modal__form-label"
@@ -83,10 +86,13 @@
               <input
                 type="text"
                 class="modal__form-input"
-                id="form-description"
+                id="form__description"
                 placeholder="Describe yourself"
                 required
+                minlength="2"
+                maxlength="200"
               />
+              <span class="form__description-error form__input-error"></span>
             </div>
             <button class="modal__form-button" type="submit">Save</button>
           </fieldset>
@@ -107,12 +113,13 @@
                   >Image link</label
                 >
                 <input
-                  type="text"
+                  type="url"
                   class="modal__form-input"
                   placeholder="Paste a link to the picture"
-                  id="image-link"
+                  id="image__link"
                   required
                 />
+                <span class="image__link-error form__input-error"></span>
               </div>
               <div class="modal__form-input-wrap">
                 <label for="caption" class="modal__form-label">Caption</label>
@@ -122,7 +129,10 @@
                   id="caption"
                   placeholder="Type your caption"
                   required
+                  minlength="2"
+                  maxlength="30"
                 />
+                <span class="caption-error form__input-error"></span>
               </div>
               <button class="modal__form-button" type="submit">Save</button>
             </div>
@@ -131,7 +141,7 @@
       </div>
     </div>
     <div class="modal modal_type_preview" id="modal__preview">
-      <div class="modal__preview-wrap">
+      <div class="modal__preview-wrap modal-overlay">
         <button class="modal__preview-button">
           <img src="#" alt="#" class="modal__preview-img" />
         </button>
@@ -164,5 +174,6 @@
       </li>
     </template>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>

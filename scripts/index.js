@@ -33,10 +33,10 @@ const cardTemplate = document.querySelector("#card-template");
 const previewModal = document.querySelector("#modal__preview");
 const previewModalImg = previewModal.querySelector(".modal__preview-img");
 const previewModalExit = previewModal.querySelector(
-  ".modal__preview-exit-button"
+  ".modal__preview-exit-button",
 );
 const previewModalCaption = previewModal.querySelector(
-  ".modal__preview-caption"
+  ".modal__preview-caption",
 );
 
 const editProfile = document.querySelector(".profile__edit-button-layout");
@@ -47,10 +47,10 @@ const newPostModal = document.querySelector("#new-post-modal");
 const postExitButton = newPostModal.querySelector(".modal__exit-icon");
 const profileName = document.querySelector(".profile__name");
 const profileBio = document.querySelector(".profile__bio");
-const nameInput = editProfileModal.querySelector("#full-name");
-const bioInput = editProfileModal.querySelector("#form-description");
+const nameInput = editProfileModal.querySelector("#full__name");
+const bioInput = editProfileModal.querySelector("#form__description");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
-const newPostLinkInput = newPostModal.querySelector("#image-link");
+const newPostLinkInput = newPostModal.querySelector("#image__link");
 const newPostCaptionInput = newPostModal.querySelector("#caption");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const cardList = document.querySelector(".cards__list");
@@ -94,10 +94,12 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 editProfile.addEventListener("click", function () {
@@ -151,3 +153,24 @@ newPostForm.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach((card) => {
   cardList.prepend(getCardElement(card));
 });
+
+const modalList = document.querySelectorAll(".modal");
+
+modalList.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+function handleEscapeKey(evt) {
+  console.log("escape handler");
+  modalList.forEach((modal) => {
+    if (modal.classList.contains("modal_is-opened")) {
+      if (evt.key === "Escape") {
+        closeModal(modal);
+      }
+    }
+  });
+}
