@@ -165,7 +165,6 @@ modalList.forEach((modal) => {
 });
 
 function handleEscapeKey(evt) {
-  console.log("escape handler");
   modalList.forEach((modal) => {
     if (modal.classList.contains("modal_is-opened")) {
       if (evt.key === "Escape") {
