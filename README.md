@@ -28,8 +28,7 @@ This project was testing all the skills weve learned in order to make a social m
 
 ### Recordings
 
-[First Stage](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link)
-[Final Stage](https://emmanuelgutierrez777.github.io/se_project_spots/)
+-[First Stage](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link) -[Final Stage](https://www.loom.com/share/173bcd068e8a441299d9e1ff5eaae071)
 
 **Figma**
 
