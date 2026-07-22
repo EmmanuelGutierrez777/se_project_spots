@@ -28,7 +28,7 @@ This project was testing all the skills weve learned in order to make a social m
 
 ### Recordings
 
--[First Stage](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link) -[Final Stage](https://www.loom.com/share/173bcd068e8a441299d9e1ff5eaae071)
+[First Stage](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link) [Final Stage](https://drive.google.com/file/d/1ZtFznLXB0OMnJp1CBISa1KtIDV-LZ0Uc/view?usp=drive_link)
 
 **Figma**
 
