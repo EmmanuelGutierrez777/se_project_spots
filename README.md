@@ -25,6 +25,9 @@ Users can:
 - Interactive modals for image preview and forms
 
 This project was testing all the skills weve learned in order to make a social media web page from scratch. -[link to project](https://emmanuelgutierrez777.github.io/se_project_spots/)
+
+### Recordings
+
 [First Stage](https://drive.google.com/file/d/1TTGBTYkNhvpQwDSj3TfVrUrLz5oCp6K-/view?usp=drive_link)
 [Final Stage](https://emmanuelgutierrez777.github.io/se_project_spots/)
 
