@@ -9,23 +9,35 @@
     />
     <meta name="author" content="Emmanuel Gutierrez" />
     <meta name="keywords" content="social media, photos, share" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./favicon.ico" />
+
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
+        <img
+          src="<%=require('./images/Logo.svg')%>"
+          alt="Spots Logo"
+          class="header__logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
           <div class="profile__customization">
-            <img
-              src="./images/avatar.jpg"
-              alt="Personal Avatar"
-              class="profile__avatar"
-            />
+            <div class="profile__avatar-wrap">
+              <button class="profile__edit-avatar-btn">
+                <img
+                  src="<%=require('./images/pencil_light.svg')%>"
+                  alt="Light Pencil Icon"
+                  class="Profile__pencil-light"
+                />
+              </button>
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                alt="Personal Avatar"
+                class="profile__avatar"
+              />
+            </div>
             <div class="profile__information">
               <div class="profile__name-and-bio">
                 <h1 class="profile__name">Bessie Coleman</h1>
@@ -33,7 +45,7 @@
               </div>
               <button class="profile__edit-button-layout" type="button">
                 <img
-                  src="./images/Edit-Icon.svg"
+                  src="<%=require('./images/Edit-Icon.svg')%>"
                   alt="Edit Profile Button"
                   class="profile__edit-button"
                 />
@@ -43,7 +55,7 @@
           </div>
           <button class="profile__new-post-button" type="button">
             <img
-              src="./images/Plus-icon.svg"
+              src="<%=require('./images/Plus-icon.svg')%>"
               alt="Plus sign"
               class="profile__plus-button-image"
             />
@@ -64,7 +76,7 @@
           <h2 class="modal__title">Edit profile</h2>
           <button class="modal__exit-icon" type="button"></button>
         </div>
-        <form class="modal__form">
+        <form class="modal__form" id="form-profile">
           <fieldset class="modal__form-profile">
             <div class="modal__form-input-wrap modal-overlay">
               <label for="full__name" class="modal__form-label">Name</label>
@@ -108,7 +120,7 @@
           <h2 class="modal__title">New post</h2>
           <button class="modal__exit-icon" type="button"></button>
         </div>
-        <form class="modal__form">
+        <form class="modal__form" id="form-post">
           <fieldset class="modal__form-profile">
             <div class="modal__form-container">
               <div class="modal__form-input-wrap">
@@ -150,7 +162,7 @@
         </button>
         <button class="modal__preview-exit-button">
           <img
-            src="./images/x-icon-white.svg"
+            src="<%=require('./images/x-icon-white.svg')%>"
             alt="White X"
             class="modal__preview-exit-icon"
           />
@@ -158,11 +170,68 @@
         <p class="modal__preview-caption"></p>
       </div>
     </div>
+    <div class="modal" id="delete-modal">
+      <div class="modal__container modal__del-container">
+        <div class="modal__row">
+          <h2 class="modal__title modal__title-del">
+            Are you sure you want to delete this image?
+          </h2>
+          <button
+            class="modal__exit-icon modal__del-exit-icon"
+            type="button"
+          ></button>
+        </div>
+        <form class="modal__form" id="delete-post">
+          <fieldset class="modal__form-profile modal__button-wrap">
+            <button
+              class="modal__form-button modal__delete-button"
+              type="submit"
+            >
+              Delete
+            </button>
+            <button
+              class="modal__form-button modal__cancel-button"
+              type="button"
+            >
+              Cancel
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="edit-avatar-modal">
+      <div class="modal__container">
+        <div class="modal__row">
+          <h2 class="modal__title">Edit profile avatar</h2>
+          <button class="modal__exit-icon" type="button"></button>
+        </div>
+        <form class="modal__form" id="form-avatar">
+          <fieldset class="modal__form-avatar">
+            <div class="modal__form-container">
+              <div class="modal__form-input-wrap">
+                <label for="image-link" class="modal__form-label"
+                  >Profile Picture</label
+                >
+                <input
+                  type="url"
+                  class="modal__form-input"
+                  placeholder="Paste a link to an image"
+                  id="avatar__link"
+                  required
+                />
+                <span class="modal__input-error" id="avatar__link-error"></span>
+              </div>
+              <button class="modal__form-button" type="submit">Save</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
     <template id="card-template">
       <li class="card">
         <button class="card__delete-button" type="button">
           <img
-            src="./images/delete_button.svg"
+            src="<%=require('./images/delete_button.svg')%>"
             alt="Delete button"
             class="card__delete-img"
           />
@@ -176,7 +245,5 @@
         </div>
       </li>
     </template>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/validation.js"></script>
   </body>
 </html>
