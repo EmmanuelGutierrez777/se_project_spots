@@ -70,7 +70,6 @@ function enableValidation(config) {
   formList.forEach((formElement) => {
     formElement.addEventListener("submit", (evt) => {
       evt.preventDefault();
-      formElement.reset();
     });
     const fieldsetList = Array.from(
       formElement.querySelectorAll(config.fieldsetSelector),
@@ -82,3 +81,5 @@ function enableValidation(config) {
 }
 
 enableValidation(settings);
+
+export { enableValidation, settings };
